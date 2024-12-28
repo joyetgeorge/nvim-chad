@@ -16,3 +16,4 @@ vim.keymap.set("n", "K", function()
   vim.diagnostic.open_float(nil, { focusable = false })
 end, { desc = "Show diagnostics" })
 
+map('i', 'jk', '<ESC>')

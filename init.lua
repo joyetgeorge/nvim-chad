@@ -25,7 +25,17 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
-require("oil").setup()
+require("oil").setup(
+  {
+  win_options = {
+    signcolumn = "yes:1",
+  },
+}
+)
+
+require('oil-git-status').setup({
+  show_ignored = true
+})
 
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
