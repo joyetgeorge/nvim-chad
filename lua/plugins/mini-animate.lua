@@ -1,1 +1,1 @@
-return { 'echasnovski/mini.animate', version = '*' }
+return { 'echasnovski/mini.animate', event = 'VeryLazy' }
