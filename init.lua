@@ -25,17 +25,15 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
-require("oil").setup(
-  {
+require("oil").setup {
   win_options = {
     signcolumn = "yes:1",
   },
 }
-)
 
-require('oil-git-status').setup({
-  show_ignored = true
-})
+require("oil-git-status").setup {
+  show_ignored = true,
+}
 
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
@@ -48,5 +46,5 @@ vim.schedule(function()
   require "mappings"
 end)
 
-local wilder = require('wilder')
-wilder.setup({modes = {':', '/', '?'}})
+local wilder = require "wilder"
+wilder.setup { modes = { ":", "/", "?" } }
